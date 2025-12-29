@@ -1,0 +1,62 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JPRUS_Dictionary.MainPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="#34b7eb" Offset="0.0"/>
+            <GradientStop Color="White" Offset="0.5"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid RowDefinitions="Auto, *" Margin="20">
+        <Grid Grid.Row="0" 
+              ColumnDefinitions="Auto, *, Auto" 
+              VerticalOptions="Start">
+            <Label 
+                Grid.Column="0"
+                Text=""
+                FontSize="20"
+                VerticalOptions="Center"
+                Margin="10,0"/>
+            <Entry 
+                Grid.Column="1"
+                x:Name="SimpleSearch"
+                Placeholder="Введите слово"
+                FontSize="16"
+                BackgroundColor="White"
+                HeightRequest="45"
+                TextColor="Black"
+                VerticalOptions="Center"/>
+            <Button 
+                Grid.Column="2"
+                Text="🔍"
+                FontSize="18"
+                FontAttributes="Bold"
+                WidthRequest="45"
+                HeightRequest="45"
+                CornerRadius="5"
+                BackgroundColor="White"
+                TextColor="Black"
+                Margin="10,0,0,0"
+                VerticalOptions="Center"/>
+        </Grid>
+
+        <Frame Grid.Row="1"
+               Padding="20"
+               CornerRadius="10"
+               BackgroundColor="White"
+               HasShadow="True"
+               Margin="0,20">
+            <Label x:Name="Result"
+                   FontSize="20"
+                   TextColor="Black"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="Fill"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   LineBreakMode="WordWrap"/>
+        </Frame>
+    </Grid>
+
+</ContentPage>
