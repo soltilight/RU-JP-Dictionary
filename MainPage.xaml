@@ -48,7 +48,8 @@
                BackgroundColor="White"
                HasShadow="True"
                Margin="0,20">
-            <Label x:Name="Result"
+            <ScrollView>
+                <Label x:Name="Result"
                    FontSize="20"
                    TextColor="Black"
                    HorizontalOptions="Fill"
@@ -56,6 +57,7 @@
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    LineBreakMode="WordWrap"/>
+                </ScrollView>
         </Frame>
     </Grid>
 
