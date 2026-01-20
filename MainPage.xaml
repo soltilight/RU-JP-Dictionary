@@ -30,6 +30,8 @@
                 VerticalOptions="Center"/>
             <Button 
                 Grid.Column="2"
+                x:Name="Search"
+                Clicked="OnButtonClicked"
                 Text="🔍"
                 FontSize="18"
                 FontAttributes="Bold"
